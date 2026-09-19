@@ -1,0 +1,234 @@
+# PHP Programming Practices
+
+This folder contains PHP programming practices from the course **Web Application Development - PHP & MySQL**.
+
+The practices cover:
+
+* Variables and Constants
+* If Statements
+* If...Elseif...Else Statements
+* Switch Case
+* Logical Operators
+
+---
+
+# Practice #1: Variables
+
+## Description
+
+This practice demonstrates how to create and use variables and constants in PHP.
+
+PHP variables start with the `$` symbol.
+
+### Example
+
+```php
+<?php
+
+$AGE = 30;
+
+echo "I'm $AGE years old";
+print "<br> Welcome to PHP";
+
+define("AGE", 20);
+
+?>
+```
+
+### Explanation
+
+* `$AGE` stores the value `30`.
+* `echo` displays the age.
+* `print` displays another message.
+* `define()` creates a constant named `AGE`.
+
+---
+
+# Practice #2: If Statement
+
+## Description
+
+This practice demonstrates how an `if` statement makes a decision based on a condition.
+
+### Example
+
+```php
+<?php
+
+$AGE = 30;
+
+if ($AGE >= 18)
+    echo "You are an adult";
+else
+    echo "You are young";
+
+?>
+```
+
+### Explanation
+
+The program checks whether the age is `18` or greater.
+
+* If true → `You are an adult`
+* If false → `You are young`
+
+The `else` statement runs when the `if` condition is false.
+
+---
+
+# Practice #3: If...Elseif...Else
+
+## Description
+
+This practice demonstrates how to check multiple conditions using `if`, `elseif`, and `else`.
+
+### Example
+
+```php
+<?php
+
+$Grade = 70;
+
+if ($Grade >= 90)
+    echo "A+";
+elseif ($Grade >= 80)
+    echo "B";
+elseif ($Grade >= 70)
+    echo "C+";
+else
+    echo "Invalid Grade";
+
+?>
+```
+
+### Explanation
+
+The program checks the grade from the highest condition to the lowest.
+
+For a grade of `70`, the output is:
+
+```text
+C+
+```
+
+---
+
+# Practice #4: Switch Case Statement
+
+## Description
+
+This practice demonstrates the PHP `switch` statement for comparing one value with multiple cases.
+
+### Example
+
+```php
+<?php
+
+$Grade = 50;
+
+switch ($Grade) {
+    case '90':
+        echo "A";
+        break;
+
+    case '80':
+        echo "B";
+        break;
+
+    case '70':
+        echo "C";
+        break;
+
+    case '50':
+        echo "Fail";
+        break;
+
+    default:
+        echo "No grade exists";
+}
+
+?>
+```
+
+### Explanation
+
+The `switch` compares `$Grade` with each `case`.
+
+For example:
+
+* `90` → A
+* `80` → B
+* `70` → C
+* `50` → Fail
+
+The `break` stops the switch after a matching case.
+The `default` runs when no case matches.
+
+---
+
+# Practice #5: Logical Operators
+
+## Description
+
+This practice demonstrates logical operators, especially the `&&` (AND) operator.
+
+### Example
+
+```php
+<?php
+
+$Age = 18;
+$Grade = 90;
+
+if ($Age >= 18 && $Grade >= 90)
+    echo "Mechanical Engineering";
+elseif ($Age >= 18 && $Grade >= 90)
+    echo "Electrical Engineering";
+elseif ($Age >= 18 && $Grade >= 90)
+    echo "Civil Engineering";
+else
+    echo "Invalid Grade";
+
+?>
+```
+
+### Explanation
+
+The `&&` operator requires **both conditions** to be true.
+
+```php
+$Age >= 18 && $Grade >= 90
+```
+
+This means:
+
+* Age must be `18` or above.
+* Grade must be `90` or above.
+
+When both conditions are true, the program displays:
+
+```text
+Mechanical Engineering
+```
+
+### Common Logical Operators
+
+| Operator | Meaning |   |    |
+| -------- | ------- | - | -- |
+| `&&`     | AND     |   |    |
+| `||`     | OR      |   |    |
+| `!`      | NOT     |   |    |
+
+---
+
+# Summary
+
+These practices introduce important PHP fundamentals:
+
+1. **Variables** – storing data.
+2. **If Statements** – making decisions.
+3. **If...Elseif...Else** – checking multiple conditions.
+4. **Switch Case** – matching a value with different cases.
+5. **Logical Operators** – combining conditions.
+
+These concepts provide the foundation for developing dynamic web applications using **PHP and MySQL**.
