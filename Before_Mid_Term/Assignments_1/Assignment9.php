@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    //Write a program that prints whether the number is a prime or non-prime. 
+    //Prime number waa number oo qaybin karo 1 iyo isaga naftisa oo kaliya oo aan tiro kale uqaybsamenin.
+$num = 18;
+$isPrime = true;
+
+if ($num <= 1) {
+    $isPrime = false;
+} else {
+    for ($i = 2; $i < $num; $i++) {
+        if ($num % $i == 0) {
+            $isPrime = false;
+            break;
+        }
+    }
+}
+
+if ($isPrime) {
+    echo $num . " is a prime number.";
+} else {
+    echo $num . " is a non-prime number.";
+}
+?>
+</body>
+</html>
