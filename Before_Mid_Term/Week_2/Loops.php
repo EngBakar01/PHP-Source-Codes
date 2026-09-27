@@ -33,6 +33,16 @@
     echo "<br> Result: $result";
 
     echo "<br> ------------------------";
+    echo "<br> Example of for loop";
+    for ($count = 1; $count <= 12; $count++) {
+        echo "<br> $count times 12 is " . $count * 12;
+    }
+    echo "<br> ------------------------";
+    echo "<br> Example of for loop to calculate the square of numbers";
+    for ($i = 1; $i <= 10; $i++) {
+        echo " The Square of $i is " . $i * $i . "<br>";
+    }
+    echo "<br> ------------------------";
     echo "<br> Example 1  of break statement";
     for ($i = 1; $i <= 10; $i++) {
         if ($i == 5) {

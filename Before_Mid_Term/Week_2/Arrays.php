@@ -9,67 +9,82 @@
     <?php
     // // Example of numeric index array
     // // Creating arrays
-    // $Collection = array();
+    $Collection = array();
 
     // // Initializing array elements
-    // $Collection[0] = 2;
-    // $Collection[1] = "Abukar Ibrahim";
-    // $Collection[2] = 30.04;
+    $Collection[0] = 2;
+    $Collection[1] = "Abukar Ibrahim";
+    $Collection[2] = 30.04;
 
-    // // Displaying array elements using var_dump
-    // var_dump($Collection);
-    // // Displaying the first element of the array
-    // echo "<br> " . $Collection[0] . "<br>";
+    // Displaying array elements using var_dump
+    var_dump($Collection);
+    // Displaying the first element of the array
+    echo "<br> " . $Collection[1] . "<br>";
 
-    // // displaying using forEach loop 
-    // echo "<br> Displaying array elements using forEach loop:<br>";
-    // foreach ($Collection as $value) {
-    //     echo "$value <br>";
-    // }
+    // displaying using forEach loop 
+    echo "<br> Displaying array elements using forEach loop:<br>";
+    foreach ($Collection as $value) {
+        echo "$value <br>";
+    }
 
 
-    // // Creating array and initializing it with values at one time
-    // $numbers = array(2, "Abukar Ibrahim", 30.04);
+    // Creating array and initializing it with values at one time
+    $numbers = array(2, "Abukar Ibrahim", 30.04);
 
-    // // Adding item to the array
-    // $numbers[] = "New Item";
+    // Adding item to the array
+    $numbers[] = "New Item";
 
-    // // Displaying array elements using var_dump
-    // var_dump($numbers);
+    // Displaying array elements using var_dump
+    var_dump($numbers);
     
-    // //print_r function to display array elements
-    // echo "<pre> and print_r function to display array elements:<br>";
-    // echo "<pre>";
-    // print_r($numbers);
-    // // var_dump($numbers);
-    // echo "</pre>";
+    //print_r function to display array elements
+    echo "<pre> and print_r function to display array elements:<br>";
+    echo "<pre>";
+    print_r($numbers);
+    // var_dump($numbers);
+    echo "</pre>";
 
-    // Associative array
-    // $person = array(
-    //     "ID" => "101",
-    //     "name" => "Abukar Ibrahim",
-    //     "age" => 30,
-    //     "city" => "Mogadishu"    
-    // );
-    // echo "Person's Name: " . $person["name"] . "<br>";
 
-    // USING for each loop to display associative array elements
-    $info = Array(
+    // // Associative array
+    $person = array(
+        "ID" => "101",
+        "name" => "Abukar Ibrahim",
+        "age" => 30,
+        "city" => "Mogadishu"    
+    );
+    echo "Person's Name: " . $person["name"] . "<br>";
+
+    // // USING for each loop to display associative array elements
+    $info = array(
         "ID" => "102",
         "name" => "Omar Ibrahim",
         "age" => 10,
         "city" => "Mogadishu"    
     );
+    //Adding element to associative array
+    $info["country"] = "Somalia";
+    $info["status"] = "Single";
+
+    // Displaying associative array elements using var_dump
+    echo "<br> Associative array elements using var_dump:<br>";
     var_dump($info);
-    // foreach($info as $list)
-    //     {
-    //         echo "$list"
-    //     };
-    //     echo ("$list") 
+    // Displaying associative array elements using for each loop
+    echo "<br> Associative array elements using for each loop:<br>";
+    foreach ($info as $key => $value) {
+        echo "<br> $key: $value";
+    }
+
+    echo ("<br> Printing array key/value pairs:<br>");
+    foreach ($info as $key => $value) {
+        echo "<br> [$key]: $value";
+    }
 
 
-    // Class Assignment
-// // Display ID and Name one time 
+
+
+
+
+
 
      ?>
 </body>
